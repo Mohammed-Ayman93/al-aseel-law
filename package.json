@@ -1,0 +1,12 @@
+{
+  "name": "al-aseel-law-firm",
+  "version": "1.0.0",
+  "description": "Al-Aseel Law Firm Landing Page",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

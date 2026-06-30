@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>مكتب الأصيل للمحاماة والاستشارات القانونية</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Google Fonts: Cairo for Headings, IBM Plex Sans Arabic for Body -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&amp;family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#e5e2e1",
+                        "tertiary": "#000000",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#f2bf50",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#5c4200",
+                        "on-primary-fixed-variant": "#474646",
+                        "background": "#f8f9fa",
+                        "inverse-primary": "#c8c6c5",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#191c1d",
+                        "on-secondary-fixed": "#241a00",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#a87d0c",
+                        "secondary-container": "#fed65b",
+                        "tertiary-container": "#261900",
+                        "on-secondary-fixed-variant": "#574500",
+                        "surface-tint": "#5f5e5e",
+                        "secondary-fixed-dim": "#e9c349",
+                        "surface": "#f8f9fa",
+                        "surface-container": "#edeeef",
+                        "on-primary-container": "#858383",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f3f4f5",
+                        "primary": "#000000",
+                        "inverse-surface": "#2e3132",
+                        "on-tertiary-fixed": "#261900",
+                        "on-primary-fixed": "#1c1b1b",
+                        "on-secondary-container": "#745c00",
+                        "tertiary-fixed": "#ffdea2",
+                        "on-background": "#191c1d",
+                        "surface-dim": "#d9dadb",
+                        "surface-bright": "#f8f9fa",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#444748",
+                        "inverse-on-surface": "#f0f1f2",
+                        "surface-container-high": "#e7e8e9",
+                        "error-container": "#ffdad6",
+                        "primary-container": "#1c1b1b",
+                        "secondary": "#735c00",
+                        "secondary-fixed": "#ffe088",
+                        "outline-variant": "#c4c7c7",
+                        "surface-variant": "#e1e3e4",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "outline": "#747878",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e1e3e4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "unit": "8px",
+                        "bento-gap": "20px",
+                        "margin-desktop": "64px",
+                        "container-max": "1280px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Cairo"],
+                        "label-lg": ["IBM Plex Sans Arabic"],
+                        "body-lg": ["IBM Plex Sans Arabic"],
+                        "headline-md": ["Cairo"],
+                        "headline-lg": ["Cairo"],
+                        "body-md": ["IBM Plex Sans Arabic"],
+                        "headline-lg-mobile": ["Cairo"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "700" }],
+                        "label-lg": ["14px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.3", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background text-on-surface selection:bg-secondary-fixed selection:text-tertiary overflow-x-hidden">
+    <!-- TopNavBar -->
+    <header
+        class="bg-primary dark:bg-tertiary text-secondary-fixed font-label-lg text-label-lg docked full-width top-0 sticky z-50 border-b border-secondary-fixed/30 backdrop-blur-md shadow-md shadow-secondary/10">
+        <div
+            class="flex flex-row-reverse justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+            <div class="flex items-center gap-4">
+                <span class="text-headline-md font-headline-lg text-secondary-fixed font-bold">الأصيل</span>
+                <img alt="Logo" class="w-10 h-10 object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-BWZ4SUCYQtrQWzePh63ftL3_9HXayUWYKouh-Xxco2eihLTtQ-HoZFbdsidkIk5Z55si_yhaB3fO47kW9lbjA8_TfNaE1dZVuickY7vEjTgIPxBfMf157oqCEieoL9s8HJlNM3bmsSjZWnMpRrZ9qe1BE9Fmzvm0Y1Bec6cHu5errYATey9JG2Z9GLv9cbLeK_KNNuLqXFYFmSf-OkwLQNT277RsNimzp6uyY_5_jTKu0Ai3Vp_KpCeMpIegHowxAHkhzrWpqjg" />
+            </div>
+            <nav class="hidden md:flex flex-row-reverse gap-8 items-center">
+                <a class="text-secondary-fixed font-bold border-b-2 border-secondary-fixed pb-1" href="#">الرئيسية</a>
+                <a class="text-on-primary/80 hover:text-secondary-fixed transition-colors" href="#about">من نحن</a>
+                <a class="text-on-primary/80 hover:text-secondary-fixed transition-colors" href="#services">خدماتنا</a>
+                <a class="text-on-primary/80 hover:text-secondary-fixed transition-colors" href="#why-us">لماذا نحن</a>
+                <a class="text-on-primary/80 hover:text-secondary-fixed transition-colors" href="#testimonials">آراء
+                    العملاء</a>
+                <a class="text-on-primary/80 hover:text-secondary-fixed transition-colors" href="#contact">اتصل بنا</a>
+            </nav>
+            <button
+                class="bg-secondary-fixed text-tertiary px-6 py-2 rounded-full font-bold hover:bg-on-tertiary-fixed-variant transition-transform active:scale-95 duration-150">
+                استشارة قانونية
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[90vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/60 z-10"></div>
+            <img class="w-full h-full object-cover zoom-bg" alt="مكتب محاماة فخم"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY5jGwwwaHhJ5x-PsD4cvaAD9h3BA0apIplCcWrDOtTlcDY9j18szNQ2PaWxxTJkkCiJo-3swqns4OkQoH8W-C3YSuCu_C5kzMmHzZlK6FRVTLOs5b54Dd1SoCEcEizYafmFyD_rnmrS4jkg2J5XNvyysjPnPIizpzZeEiw8PgqIgm--Czp1uIGmQT0hCVHKztesXXnkFkPD2GFkuJSR795LTeEe5uaWiLKrLBh1CZ9p3xyiCdWaaQCP7-EY0iAZ5NSVxZNop3MsU" />
+        </div>
+        <div class="absolute inset-0 w-full h-full z-10 opacity-30" style="display:block;">
+            <canvas id="shader-canvas-ANIMATION_7" style="display:block;width:100%;height:100%"></canvas>
+
+        </div>
+        <div class="relative z-20 text-center px-4 max-w-4xl fade-up" id="hero-content">
+            <img alt="Al-Aseel Logo" class="mx-auto w-32 h-32 mb-8 drop-shadow-2xl"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-BWZ4SUCYQtrQWzePh63ftL3_9HXayUWYKouh-Xxco2eihLTtQ-HoZFbdsidkIk5Z55si_yhaB3fO47kW9lbjA8_TfNaE1dZVuickY7vEjTgIPxBfMf157oqCEieoL9s8HJlNM3bmsSjZWnMpRrZ9qe1BE9Fmzvm0Y1Bec6cHu5errYATey9JG2Z9GLv9cbLeK_KNNuLqXFYFmSf-OkwLQNT277RsNimzp6uyY_5_jTKu0Ai3Vp_KpCeMpIegHowxAHkhzrWpqjg" />
+            <h1 class="font-display-lg text-display-lg text-white mb-4">من الأصالة إلى العدالة</h1>
+            <p class="font-body-lg text-body-lg text-secondary-fixed mb-10 tracking-widest uppercase">خبرة قانونية |
+                التزام | نتائج</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a class="gold-bg text-black px-10 py-4 rounded-full font-bold text-lg hover:brightness-110 transition-all shadow-lg shadow-yellow-900/20"
+                    href="#contact">احجز استشارة الآن</a>
+                <a class="border border-white/30 text-white backdrop-blur-sm px-10 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-all"
+                    href="#services">اكتشف خدماتنا</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-24 bg-surface-container relative" id="about">
+        <div class="max-w-container-max mx-auto px-margin-desktop">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-up">
+                    <span class="gold-text font-bold tracking-widest uppercase mb-4 block">عن مكتب الأصيل</span>
+                    <h2 class="font-headline-lg text-headline-lg text-tertiary mb-6">إرث من الثقة والتميز القانوني</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-8">
+                        تأسس مكتب الأصيل ليكون منارة للعدالة في قلب القاهرة، حيث نجمع بين الأصالة في القيم القانونية
+                        والاحترافية الحديثة في التنفيذ. نحن نؤمن بأن كل موكل يستحق دفاعاً لا يلين واستشارة مبنية على دقة
+                        متناهية.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div
+                            class="p-6 bg-white rounded-xl border border-outline-variant shadow-sm hover:border-secondary transition-all">
+                            <span class="material-symbols-outlined text-secondary text-4xl mb-3">gavel</span>
+                            <h3 class="font-headline-md text-headline-md mb-2">النزاهة</h3>
+                            <p class="text-on-surface-variant">نعمل بأعلى معايير الأخلاق المهنية والشفافية التامة.</p>
+                        </div>
+                        <div
+                            class="p-6 bg-white rounded-xl border border-outline-variant shadow-sm hover:border-secondary transition-all">
+                            <span class="material-symbols-outlined text-secondary text-4xl mb-3">verified_user</span>
+                            <h3 class="font-headline-md text-headline-md mb-2">السرية</h3>
+                            <p class="text-on-surface-variant">خصوصية عملائنا هي حجر الزاوية في ممارستنا القانونية.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative fade-up delay-200">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl gold-border">
+                        <img class="w-full h-[500px] object-cover" alt="صورة محامي محترف"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkoYsc7v0BR_w1OWZJKJKUg63hCKsE2vh-VlTZyvTChuODVCw5GRZyjIk5AF91Ycr0NtWjVcN4TAZVnhvIs15Qtb6qkgNTaumMOgARM4mp9FNNfVTE8IJR4HvR470vwkjHunQg2w6aaReX1qiITz5ojhXgElwhKsjaZTfiMBwTzCPaigEqqPMfdKuZ3NY25AO4Gstv0qa6HqyQPainrHfLZZspKdo-A3-T8qRe-VWis8QxCaBVZaO3VPhiUacLCp32qBvKdJMYhbI" />
+                    </div>
+                    <div
+                        class="absolute -bottom-8 -right-8 bg-tertiary p-8 rounded-xl gold-border text-center shadow-xl hidden md:block">
+                        <span class="block text-4xl font-bold gold-text mb-1">15+</span>
+                        <span class="text-white text-sm">عاماً من الخبرة</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Bento Grid -->
+    <section class="py-24 bg-tertiary text-white overflow-hidden" id="services">
+        <div class="max-w-container-max mx-auto px-margin-desktop">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="font-headline-lg text-headline-lg gold-text mb-4">خدماتنا القانونية المتخصصة</h2>
+                <p class="text-on-primary/60 max-w-2xl mx-auto">نقدم طيفاً واسعاً من الخدمات القانونية المصممة بعناية
+                    لتلبية احتياجات الأفراد والشركات.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-bento-gap">
+                <!-- Bento Card 1 -->
+                <div
+                    class="md:col-span-8 group relative overflow-hidden bg-white/5 rounded-xl gold-border p-8 hover:bg-white/10 transition-all fade-up">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="material-symbols-outlined gold-text text-5xl mb-6"
+                                style="font-variation-settings: 'FILL' 1;">balance</span>
+                            <h3 class="text-3xl font-bold mb-4">القضايا المدنية والتجارية</h3>
+                            <p class="text-on-primary/60 max-w-md">إدارة النزاعات التعاقدية، قضايا التعويضات، والتحصيل
+                                التجاري للشركات الكبرى بأعلى مستويات الاحترافية.</p>
+                        </div>
+                        <span
+                            class="material-symbols-outlined text-white/20 text-8xl absolute -left-4 -bottom-4 rotate-12">corporate_fare</span>
+                    </div>
+                </div>
+                <!-- Bento Card 2 -->
+                <div
+                    class="md:col-span-4 group bg-white/5 rounded-xl gold-border p-8 hover:bg-white/10 transition-all fade-up">
+                    <span class="material-symbols-outlined gold-text text-5xl mb-6">shield_person</span>
+                    <h3 class="text-2xl font-bold mb-4">القضايا الجنائية</h3>
+                    <p class="text-on-primary/60">دفاع استراتيجي في الجنايات والجنح مع التركيز على حماية الحقوق
+                        الدستورية للعملاء.</p>
+                </div>
+                <!-- Bento Card 3 -->
+                <div
+                    class="md:col-span-4 group bg-white/5 rounded-xl gold-border p-8 hover:bg-white/10 transition-all fade-up">
+                    <span class="material-symbols-outlined gold-text text-5xl mb-6">family_history</span>
+                    <h3 class="text-2xl font-bold mb-4">شؤون الأسرة</h3>
+                    <p class="text-on-primary/60">الطلاق، الحضانة، والنفقات، نتعامل مع هذه القضايا بحساسية بالغة وتركيز
+                        على مصلحة الأسرة.</p>
+                </div>
+                <!-- Bento Card 4 -->
+                <div
+                    class="md:col-span-4 group bg-white/5 rounded-xl gold-border p-8 hover:bg-white/10 transition-all fade-up">
+                    <span class="material-symbols-outlined gold-text text-5xl mb-6">description</span>
+                    <h3 class="text-2xl font-bold mb-4">صياغة العقود</h3>
+                    <p class="text-on-primary/60">تحصين مستقبلك القانوني عبر صياغة عقود دقيقة تضمن كافة حقوقك وتمنع
+                        النزاعات المستقبلية.</p>
+                </div>
+                <!-- Bento Card 5 -->
+                <div
+                    class="md:col-span-4 group bg-white/5 rounded-xl gold-border p-8 hover:bg-white/10 transition-all fade-up">
+                    <span class="material-symbols-outlined gold-text text-5xl mb-6">gavel</span>
+                    <h3 class="text-2xl font-bold mb-4">الطعون والتحكيم</h3>
+                    <p class="text-on-primary/60">متخصصون في النقض والإدارية العليا، بجانب التحكيم الدولي والمحلي لفض
+                        المنازعات.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us & Stats -->
+    <section class="py-24 bg-background overflow-hidden" id="why-us">
+        <div class="max-w-container-max mx-auto px-margin-desktop">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="fade-up">
+                    <h2 class="font-headline-lg text-headline-lg text-tertiary mb-8">لماذا يختار النخبة مكتب الأصيل؟
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-black">check</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">فريق قانوني متكامل</h4>
+                                <p class="text-on-surface-variant">نخبة من المستشارين في مختلف التخصصات لضمان تغطية
+                                    شاملة لقضيتك.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-black">check</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">متابعة دقيقة ولحظية</h4>
+                                <p class="text-on-surface-variant">نطلعك على كل تحديث في مسار قضيتك أولاً بأول من خلال
+                                    تقارير دورية.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-black">check</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">نسبة نجاح استثنائية</h4>
+                                <p class="text-on-surface-variant">سجل حافل بالانتصارات القانونية في أعقد القضايا أمام
+                                    مختلف المحاكم.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-6 fade-up delay-200">
+                    <div
+                        class="bg-tertiary p-10 rounded-2xl gold-border text-center transform hover:-translate-y-2 transition-all">
+                        <div class="text-4xl font-bold gold-text mb-2 counter" data-target="1500">0</div>
+                        <div class="text-white/70 text-sm">قضية ناجحة</div>
+                    </div>
+                    <div
+                        class="bg-white p-10 rounded-2xl border border-outline-variant text-center shadow-sm transform hover:-translate-y-2 transition-all">
+                        <div class="text-4xl font-bold text-tertiary mb-2 counter" data-target="95">0</div>
+                        <div class="text-on-surface-variant text-sm">% نسبة الرضا</div>
+                    </div>
+                    <div
+                        class="bg-white p-10 rounded-2xl border border-outline-variant text-center shadow-sm transform hover:-translate-y-2 transition-all">
+                        <div class="text-4xl font-bold text-tertiary mb-2 counter" data-target="24">0</div>
+                        <div class="text-on-surface-variant text-sm">ساعة دعم قانوني</div>
+                    </div>
+                    <div
+                        class="bg-tertiary p-10 rounded-2xl gold-border text-center transform hover:-translate-y-2 transition-all">
+                        <div class="text-4xl font-bold gold-text mb-2 counter" data-target="15">0</div>
+                        <div class="text-white/70 text-sm">مستشار خبير</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline / How we work -->
+    <section class="py-24 bg-surface-container-high">
+        <div class="max-w-container-max mx-auto px-margin-desktop">
+            <h2 class="font-headline-lg text-headline-lg text-center text-tertiary mb-16 fade-up">رحلة قضيتك معنا</h2>
+            <div class="flex flex-col md:flex-row justify-between items-center relative gap-8">
+                <!-- Line background -->
+                <div class="absolute top-1/2 left-0 w-full h-0.5 bg-secondary-fixed/50 hidden md:block z-0"></div>
+                <div class="flex-1 text-center relative z-10 fade-up">
+                    <div
+                        class="w-16 h-16 bg-tertiary gold-text rounded-full flex items-center justify-center mx-auto mb-6 gold-border shadow-lg">
+                        1</div>
+                    <h4 class="font-bold mb-2">الاستشارة الأولى</h4>
+                    <p class="text-sm text-on-surface-variant">مقابلة أولية لفهم أبعاد الموقف القانوني بدقة.</p>
+                </div>
+                <div class="flex-1 text-center relative z-10 fade-up" style="transition-delay: 100ms;">
+                    <div
+                        class="w-16 h-16 bg-tertiary gold-text rounded-full flex items-center justify-center mx-auto mb-6 gold-border shadow-lg">
+                        2</div>
+                    <h4 class="font-bold mb-2">دراسة الملف</h4>
+                    <p class="text-sm text-on-surface-variant">تحليل شامل للمستندات وصياغة الثغرات القانونية.</p>
+                </div>
+                <div class="flex-1 text-center relative z-10 fade-up" style="transition-delay: 200ms;">
+                    <div
+                        class="w-16 h-16 bg-tertiary gold-text rounded-full flex items-center justify-center mx-auto mb-6 gold-border shadow-lg">
+                        3</div>
+                    <h4 class="font-bold mb-2">وضع الاستراتيجية</h4>
+                    <p class="text-sm text-on-surface-variant">تطوير خطة عمل قانونية تضمن أفضل النتائج الممكنة.</p>
+                </div>
+                <div class="flex-1 text-center relative z-10 fade-up" style="transition-delay: 300ms;">
+                    <div
+                        class="w-16 h-16 bg-tertiary gold-text rounded-full flex items-center justify-center mx-auto mb-6 gold-border shadow-lg">
+                        4</div>
+                    <h4 class="font-bold mb-2">المرافعة والتمثيل</h4>
+                    <p class="text-sm text-on-surface-variant">تمثيلكم أمام الجهات المختصة بكل قوة واحترافية.</p>
+                </div>
+                <div class="flex-1 text-center relative z-10 fade-up" style="transition-delay: 400ms;">
+                    <div
+                        class="w-16 h-16 bg-tertiary gold-text rounded-full flex items-center justify-center mx-auto mb-6 gold-border shadow-lg">
+                        5</div>
+                    <h4 class="font-bold mb-2">تحقيق النتيجة</h4>
+                    <p class="text-sm text-on-surface-variant">الوصول للقرار النهائي ومتابعة تنفيذه بشكل كامل.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 bg-background" id="testimonials">
+        <div class="max-w-container-max mx-auto px-margin-desktop">
+            <h2 class="font-headline-lg text-headline-lg text-center text-tertiary mb-16 fade-up">قالوا عن الأصيل</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl border border-outline-variant shadow-sm relative fade-up">
+                    <span
+                        class="material-symbols-outlined gold-text text-5xl absolute -top-4 -right-4 opacity-20">format_quote</span>
+                    <p class="italic text-on-surface-variant mb-6 leading-relaxed">"وجدت في مكتب الأصيل ليس فقط محامين
+                        أكفاء، بل مستشارين يهتمون فعلاً بمصالحي الشخصية والمهنية. دفاعهم كان مبهراً."</p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface/40">
+                            <span class="material-symbols-outlined">person</span>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-tertiary">م. أحمد سالم</h5>
+                            <p class="text-xs text-on-surface-variant">رئيس مجلس إدارة شركة المقاولات المتحدة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-outline-variant shadow-sm relative fade-up"
+                    style="transition-delay: 100ms;">
+                    <span
+                        class="material-symbols-outlined gold-text text-5xl absolute -top-4 -right-4 opacity-20">format_quote</span>
+                    <p class="italic text-on-surface-variant mb-6 leading-relaxed">"الدقة في المواعيد والسرية المطلقة هي
+                        ما يميزهم. قضية الميراث المعقدة حُلت بفضل حنكتهم القانونية في وقت قياسي."</p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface/40">
+                            <span class="material-symbols-outlined">person</span>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-tertiary">أ. سارة المنصوري</h5>
+                            <p class="text-xs text-on-surface-variant">سيدة أعمال</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-outline-variant shadow-sm relative fade-up"
+                    style="transition-delay: 200ms;">
+                    <span
+                        class="material-symbols-outlined gold-text text-5xl absolute -top-4 -right-4 opacity-20">format_quote</span>
+                    <p class="italic text-on-surface-variant mb-6 leading-relaxed">"أفضل مكتب محاماة تعاملت معه في
+                        القاهرة. صياغة العقود التجارية لديهم تمنحك الأمان الكامل للقيام بأي استثمار."</p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface/40">
+                            <span class="material-symbols-outlined">person</span>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-tertiary">د. خالد الهاشمي</h5>
+                            <p class="text-xs text-on-surface-variant">استشاري دولي</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer class="bg-tertiary text-white pt-24 pb-12 overflow-hidden relative" id="contact">
+        <div class="absolute inset-0 w-full h-full opacity-20 pointer-events-none" style="display:block;">
+            <canvas id="shader-canvas-footer-ANIMATION_7" style="display:block;width:100%;height:100%"></canvas>
+
+        </div>
+        <div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-20">
+                <div class="lg:col-span-4 fade-up">
+                    <img alt="Logo" class="w-24 h-24 mb-6"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-BWZ4SUCYQtrQWzePh63ftL3_9HXayUWYKouh-Xxco2eihLTtQ-HoZFbdsidkIk5Z55si_yhaB3fO47kW9lbjA8_TfNaE1dZVuickY7vEjTgIPxBfMf157oqCEieoL9s8HJlNM3bmsSjZWnMpRrZ9qe1BE9Fmzvm0Y1Bec6cHu5errYATey9JG2Z9GLv9cbLeK_KNNuLqXFYFmSf-OkwLQNT277RsNimzp6uyY_5_jTKu0Ai3Vp_KpCeMpIegHowxAHkhzrWpqjg" />
+                    <h3 class="text-3xl font-bold gold-text mb-6">مكتب الأصيل للمحاماة</h3>
+                    <p class="text-on-primary/60 mb-8 leading-relaxed">من الأصالة في القيم إلى العدالة في التنفيذ. نحن
+                        شركاؤكم في حماية حقوقكم وبناء مستقبلكم القانوني بأمان واحترافية مطلقة.</p>
+                    <div class="flex gap-4">
+                        <a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-secondary hover:border-secondary transition-all"
+                            href="#" aria-label="مشاركة">
+                            <span class="material-symbols-outlined text-sm">share</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-secondary hover:border-secondary transition-all"
+                            href="#" aria-label="بريد الكتروني">
+                            <span class="material-symbols-outlined text-sm">mail</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 fade-up" style="transition-delay: 100ms;">
+                    <h4 class="text-xl font-bold mb-8 gold-text">تواصل معنا</h4>
+                    <form class="space-y-4"
+                        onsubmit="event.preventDefault(); alert('تم استلام رسالتكم بنجاح. سنتواصل معكم في أقرب وقت.');">
+                        <div class="grid grid-cols-2 gap-4">
+                            <input
+                                class="w-full bg-white/5 border border-white/10 rounded-lg p-3 text-white focus:border-secondary outline-none transition-all"
+                                placeholder="الاسم الكامل" type="text" required />
+                            <input
+                                class="w-full bg-white/5 border border-white/10 rounded-lg p-3 text-white focus:border-secondary outline-none transition-all"
+                                placeholder="رقم الهاتف" type="tel" required />
+                        </div>
+                        <input
+                            class="w-full bg-white/5 border border-white/10 rounded-lg p-3 text-white focus:border-secondary outline-none transition-all"
+                            placeholder="البريد الإلكتروني" type="email" required />
+                        <textarea
+                            class="w-full bg-white/5 border border-white/10 rounded-lg p-3 text-white focus:border-secondary outline-none transition-all"
+                            placeholder="رسالتك أو تفاصيل قضيتك" rows="4" required></textarea>
+                        <button
+                            class="gold-bg text-black w-full py-4 rounded-lg font-bold hover:brightness-110 transition-all">إرسال
+                            الطلب</button>
+                    </form>
+                </div>
+                <div class="lg:col-span-3 fade-up" style="transition-delay: 200ms;">
+                    <h4 class="text-xl font-bold mb-8 gold-text">معلومات التواصل</h4>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <span class="material-symbols-outlined gold-text">location_on</span>
+                            <span>القاهرة - مدينة نصر - شارع مكرم عبيد - برج المروة، الدور الخامس</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="material-symbols-outlined gold-text">call</span>
+                            <span dir="ltr">0100 123 4567</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <span class="material-symbols-outlined gold-text">mail</span>
+                            <span>info@alaseel-law.com</span>
+                        </li>
+                    </ul>
+                    <div class="mt-8 rounded-xl overflow-hidden h-48 border border-white/10">
+                        <div
+                            class="w-full h-full bg-white/10 flex items-center justify-center text-on-primary/40 text-xs text-center p-4">
+                            <div class="flex flex-col items-center" data-location="Cairo, Egypt">
+                                <span class="material-symbols-outlined text-4xl mb-2">map</span>
+                                موقعنا في القاهرة
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-on-primary/40 text-sm">© 2026 مكتب الأصيل للمحاماة والاستشارات القانونية. جميع الحقوق
+                    محفوظة.</p>
+                <div class="flex gap-8 text-sm text-on-primary/40">
+                    <a class="hover:text-secondary transition-colors" href="#">سياسة الخصوصية</a>
+                    <a class="hover:text-secondary transition-colors" href="#">شروط الاستخدام</a>
+                    <a class="hover:text-secondary transition-colors" href="#">الأسئلة الشائعة</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FAB for WhatsApp -->
+    <a class="fixed bottom-8 left-8 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl z-50 hover:scale-110 transition-transform"
+        href="https://wa.me/201001234567" target="_blank" aria-label="تواصل معنا عبر واتساب">
+        <svg fill="currentColor" height="32" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.187-2.59-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217s.231.001.332.005c.109.004.258-.041.405.314.159.386.541 1.321.588 1.417.047.097.079.21.014.339-.065.13-.122.21-.244.353-.122.144-.257.321-.366.43-.123.123-.252.257-.108.503.144.246.641 1.056 1.378 1.712.948.843 1.748 1.106 2.009 1.238.261.13.412.109.563-.065.151-.174.651-.758.824-1.017.173-.259.347-.217.585-.13.239.087 1.517.715 1.777.846.259.13.433.195.498.303.065.109.065.635-.079 1.04z">
+            </path>
+        </svg>
+    </a>
+
+    <!-- up button -->
+    <button
+        class="up-btn fixed bottom-24 right-8 w-12 h-12 bg-secondary-fixed text-white rounded-full flex items-center justify-center shadow-2xl z-50 hover:scale-110 transition-transform">
+        <span class="material-symbols-outlined arrow-upward text-black">arrow_upward</span>
+    </button>
+    <script src="script.js"></script>
+</body>
+
+</html>
