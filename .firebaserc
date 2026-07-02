@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "alaseel-law"
-  }
+    "default": "alaseel--laws"
+  },
+  "targets": {},
+  "etags": {}
 }
