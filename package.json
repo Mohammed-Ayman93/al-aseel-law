@@ -7,6 +7,8 @@
     "dev": "lite-server"
   },
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "@tailwindcss/cli": "^4.3.2",
+    "lite-server": "^2.6.1",
+    "tailwindcss": "^4.3.2"
   }
 }

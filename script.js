@@ -181,6 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Up Button Animation
     upBtn.addEventListener('click', () => {
+        console.log('Up button clicked');
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 });
