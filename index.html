@@ -168,23 +168,85 @@
                 <div class="fade-up">
                     <span class="gold-text font-bold tracking-widest uppercase mb-4 block">عن مكتب الأصيل</span>
                     <h2 class="font-headline-lg text-headline-lg text-tertiary mb-6">إرث من الثقة والتميز القانوني</h2>
-                    <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-8">
-                        تأسس مكتب الأصيل ليكون منارة للعدالة في قلب القاهرة، حيث نجمع بين الأصالة في القيم القانونية
-                        والاحترافية الحديثة في التنفيذ. نحن نؤمن بأن كل موكل يستحق دفاعاً لا يلين واستشارة مبنية على دقة
-                        متناهية.
-                    </p>
-                    <div class="grid grid-cols-2 gap-6">
-                        <div
-                            class="p-6 bg-white rounded-xl border border-outline-variant shadow-sm hover:border-secondary transition-all">
-                            <span class="material-symbols-outlined text-secondary text-4xl mb-3">gavel</span>
-                            <h3 class="font-headline-md text-headline-md mb-2">النزاهة</h3>
-                            <p class="text-on-surface-variant">نعمل بأعلى معايير الأخلاق المهنية والشفافية التامة.</p>
+                    
+                    <!-- Tabs Navigation -->
+                    <div class="flex border-b border-outline-variant mb-6" id="about-tabs" role="tablist">
+                        <button class="flex-1 py-3 text-center font-bold border-b-2 border-secondary-fixed gold-text focus:outline-none transition-all duration-300 cursor-pointer" id="tab-who" role="tab" aria-selected="true" aria-controls="pane-who">من نحن</button>
+                        <button class="flex-1 py-3 text-center font-bold border-b-2 border-transparent text-on-surface-variant hover:text-secondary-fixed focus:outline-none transition-all duration-300 cursor-pointer" id="tab-goals" role="tab" aria-selected="false" aria-controls="pane-goals">أهدافنا</button>
+                        <button class="flex-1 py-3 text-center font-bold border-b-2 border-transparent text-on-surface-variant hover:text-secondary-fixed focus:outline-none transition-all duration-300 cursor-pointer" id="tab-vision" role="tab" aria-selected="false" aria-controls="pane-vision">رؤيتنا</button>
+                    </div>
+                    
+                    <!-- Tabs Content -->
+                    <div id="about-panes" class="relative min-h-[320px]">
+                        <!-- من نحن Pane -->
+                        <div class="tab-pane transition-opacity duration-300 block opacity-100" id="pane-who" role="tabpanel" aria-labelledby="tab-who">
+                            <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-6">
+                                يتمتع مكتب الأصيل للمحاماة والاستشارات القانونية بمكانة ريادية في تقديم كل أنواع الخدمات والاستشارات القانونية، وحوكمة الشركات، والتقاضي للأفراد والشركات على المستوى المحلي والدولي، بخبرة تمتد لأكثر من 27 عاماً من العمل الدؤوب والنجاحات المتلاحقة في كل مجالات القانون.
+                            </p>
+                            <ul class="space-y-3 text-on-surface-variant">
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined gold-text">check_circle</span>
+                                    <span>خبرة تبلغ 27 عاماً من العمل المضني والنجاحات المتلاحقة في كل مجالات القانون.</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined gold-text">check_circle</span>
+                                    <span>فريق يتصدر طليعة الابتكار والتقدم القانوني في إدارة أضخم المهام والملفات.</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined gold-text">check_circle</span>
+                                    <span>صياغة عقود احترافية، حماية الملكية الفكرية، والتمثيل القانوني المتكامل.</span>
+                                </li>
+                            </ul>
                         </div>
-                        <div
-                            class="p-6 bg-white rounded-xl border border-outline-variant shadow-sm hover:border-secondary transition-all">
-                            <span class="material-symbols-outlined text-secondary text-4xl mb-3">verified_user</span>
-                            <h3 class="font-headline-md text-headline-md mb-2">السرية</h3>
-                            <p class="text-on-surface-variant">خصوصية عملائنا هي حجر الزاوية في ممارستنا القانونية.</p>
+                        
+                        <!-- أهدافنا Pane -->
+                        <div class="tab-pane transition-opacity duration-300 hidden opacity-0" id="pane-goals" role="tabpanel" aria-labelledby="tab-goals">
+                            <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-4">
+                                نهدف في مكتب الأصيل للمحاماة أن نكون المرجعية الأولى للتميز والاحترافية:
+                            </p>
+                            <ul class="space-y-3 text-on-surface-variant">
+                                <li class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined gold-text shrink-0 mt-0.5">star</span>
+                                    <span>أن نكون بمثابة مرجع رئيسي لكافة شركات ومكاتب المحاماة التي تقدم الخدمات القانونية.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined gold-text shrink-0 mt-0.5">star</span>
+                                    <span>تقديم استشارات قانونية مثمرة وفعالة لنكون الخيار الأول لعملائنا عند اتخاذ القرارات التجارية.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined gold-text shrink-0 mt-0.5">star</span>
+                                    <span>تقديم أفضل الحلول المبتكرة للمنازعات القضائية عبر نخبة من الكوادر القانونية المخضرمة.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined gold-text shrink-0 mt-0.5">star</span>
+                                    <span>تقديم المساعدة القانونية المتكاملة للشركات والأفراد على المستوى المحلي والدولي.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined gold-text shrink-0 mt-0.5">star</span>
+                                    <span>التميز في التمثيل القانوني للشركات والمؤسسات بأرقى درجات المهارة والأخلاق والحرفية.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- رؤيتنا Pane -->
+                        <div class="tab-pane transition-opacity duration-300 hidden opacity-0" id="pane-vision" role="tabpanel" aria-labelledby="tab-vision">
+                            <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-4">
+                                نسعى لصناعة فارق ملموس في مسيرة عملائنا وشركاء نجاحنا:
+                            </p>
+                            <ul class="space-y-3 text-on-surface-variant">
+                                <li class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined gold-text shrink-0 mt-0.5">visibility</span>
+                                    <span>أن نكون الطرف الداعم الدائم لعملائنا الذي يسعد كل الأطراف برؤيته وكسب ثقتهم.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined gold-text shrink-0 mt-0.5">visibility</span>
+                                    <span>تطوير قدراتنا باستمرار في اختيار الحلول المبتكرة لمواكبة التحديات المتسارعة في المجتمع.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined gold-text shrink-0 mt-0.5">visibility</span>
+                                    <span>التوسع وتقديم الخدمات القانونية لأكبر شريحة لنصبح أفضل مكتب محاماة بمصر والشرق الأوسط وأفريقيا.</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -195,69 +257,219 @@
                     </div>
                     <div
                         class="absolute -bottom-8 -right-8 bg-tertiary p-8 rounded-xl gold-border text-center shadow-xl hidden md:block">
-                        <span class="block text-4xl font-bold gold-text mb-1">15+</span>
-                        <span class="text-white text-sm">عاماً من الخبرة</span>
+                        <span class="block text-4xl font-bold gold-text mb-1">27</span>
+                        <span class="text-white text-sm">عاماً من الخبرة القانونية</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Bento Grid -->
+    <!-- Services Grid -->
     <section class="py-24 bg-tertiary text-white overflow-hidden" id="services">
         <div class="max-w-container-max mx-auto px-margin-desktop">
             <div class="text-center mb-16 fade-up">
+                <span class="gold-text font-bold tracking-widest uppercase mb-4 block">تخصصاتنا القانونية</span>
                 <h2 class="font-headline-lg text-headline-lg gold-text mb-4">خدماتنا القانونية المتخصصة</h2>
-                <p class="text-on-primary/60 max-w-2xl mx-auto">نقدم طيفاً واسعاً من الخدمات القانونية المصممة بعناية
-                    لتلبية احتياجات الأفراد والشركات.</p>
+                <p class="text-on-primary/60 max-w-2xl mx-auto text-sm">
+                    نقدم طيفاً واسعاً من الخدمات القانونية والحلول الاستشارية المبتكرة المصممة بعناية لتلبية احتياجات الشركات والمستثمرين والأفراد.
+                </p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-bento-gap">
-                <!-- Bento Card 1 -->
-                <div
-                    class="md:col-span-8 group relative overflow-hidden bg-white/5 rounded-xl gold-border p-8 hover:bg-white/10 transition-all fade-up">
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <span class="material-symbols-outlined gold-text text-5xl mb-6"
-                                style="font-variation-settings: 'FILL' 1;">balance</span>
-                            <h3 class="text-3xl font-bold mb-4">القضايا المدنية والتجارية</h3>
-                            <p class="text-on-primary/60 max-w-md">إدارة النزاعات التعاقدية، قضايا التعويضات، والتحصيل
-                                التجاري للشركات الكبرى بأعلى مستويات الاحترافية.</p>
-                        </div>
-                        <span
-                            class="material-symbols-outlined text-white/20 text-8xl absolute -left-4 -bottom-4 rotate-12">corporate_fare</span>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="group bg-white/5 rounded-xl gold-border p-6 hover:bg-white/10 transition-all flex flex-col justify-between fade-up">
+                    <div>
+                        <span class="material-symbols-outlined gold-text text-4xl mb-4">admin_panel_settings</span>
+                        <h3 class="text-xl font-bold mb-2">حوكمة الشركات</h3>
+                        <p class="text-on-primary/60 text-sm mb-6 leading-relaxed">
+                            تقديم الخدمات القانونية ذات الصلة بحوكمة الشركات لتبسيط الإجراءات وحماية حقوق المساهمين والتحكم في المخاطر.
+                        </p>
                     </div>
+                    <button onclick="openServiceModal(0)" class="text-secondary-fixed hover:text-white font-bold text-sm flex items-center gap-1 cursor-pointer transition-colors w-fit">
+                        عرض التفاصيل <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
                 </div>
-                <!-- Bento Card 2 -->
-                <div
-                    class="md:col-span-4 group bg-white/5 rounded-xl gold-border p-8 hover:bg-white/10 transition-all fade-up">
-                    <span class="material-symbols-outlined gold-text text-5xl mb-6">shield_person</span>
-                    <h3 class="text-2xl font-bold mb-4">القضايا الجنائية</h3>
-                    <p class="text-on-primary/60">دفاع استراتيجي في الجنايات والجنح مع التركيز على حماية الحقوق
-                        الدستورية للعملاء.</p>
+                <!-- Card 2 -->
+                <div class="group bg-white/5 rounded-xl gold-border p-6 hover:bg-white/10 transition-all flex flex-col justify-between fade-up">
+                    <div>
+                        <span class="material-symbols-outlined gold-text text-4xl mb-4">history_edu</span>
+                        <h3 class="text-xl font-bold mb-2">صياغة العقود</h3>
+                        <p class="text-on-primary/60 text-sm mb-6 leading-relaxed">
+                            صياغة ومراجعة العقود باللغتين العربية والإنجليزية وتجنب الثغرات والأخطاء القانونية التي قد تكلف الكثير.
+                        </p>
+                    </div>
+                    <button onclick="openServiceModal(1)" class="text-secondary-fixed hover:text-white font-bold text-sm flex items-center gap-1 cursor-pointer transition-colors w-fit">
+                        عرض التفاصيل <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
                 </div>
-                <!-- Bento Card 3 -->
-                <div
-                    class="md:col-span-4 group bg-white/5 rounded-xl gold-border p-8 hover:bg-white/10 transition-all fade-up">
-                    <span class="material-symbols-outlined gold-text text-5xl mb-6">family_history</span>
-                    <h3 class="text-2xl font-bold mb-4">شؤون الأسرة</h3>
-                    <p class="text-on-primary/60">الطلاق، الحضانة، والنفقات، نتعامل مع هذه القضايا بحساسية بالغة وتركيز
-                        على مصلحة الأسرة.</p>
+                <!-- Card 3 -->
+                <div class="group bg-white/5 rounded-xl gold-border p-6 hover:bg-white/10 transition-all flex flex-col justify-between fade-up">
+                    <div>
+                        <span class="material-symbols-outlined gold-text text-4xl mb-4">handshake</span>
+                        <h3 class="text-xl font-bold mb-2">عمليات الاندماج والاستحواذ</h3>
+                        <p class="text-on-primary/60 text-sm mb-6 leading-relaxed">
+                            مساعدة الشركات في مواجهة التحديات والمفاوضات المعقدة، وصياغة عقود الدمج، والتدقيق القانوني.
+                        </p>
+                    </div>
+                    <button onclick="openServiceModal(2)" class="text-secondary-fixed hover:text-white font-bold text-sm flex items-center gap-1 cursor-pointer transition-colors w-fit">
+                        عرض التفاصيل <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
                 </div>
-                <!-- Bento Card 4 -->
-                <div
-                    class="md:col-span-4 group bg-white/5 rounded-xl gold-border p-8 hover:bg-white/10 transition-all fade-up">
-                    <span class="material-symbols-outlined gold-text text-5xl mb-6">description</span>
-                    <h3 class="text-2xl font-bold mb-4">صياغة العقود</h3>
-                    <p class="text-on-primary/60">تحصين مستقبلك القانوني عبر صياغة عقود دقيقة تضمن كافة حقوقك وتمنع
-                        النزاعات المستقبلية.</p>
+                <!-- Card 4 -->
+                <div class="group bg-white/5 rounded-xl gold-border p-6 hover:bg-white/10 transition-all flex flex-col justify-between fade-up">
+                    <div>
+                        <span class="material-symbols-outlined gold-text text-4xl mb-4">domain</span>
+                        <h3 class="text-xl font-bold mb-2">العقارات</h3>
+                        <p class="text-on-primary/60 text-sm mb-6 leading-relaxed">
+                            استشارات للشركات العقارية خلال عمليات الشراء، البيع، التطوير، صياغة عقود المقاولات، وحل النزاعات.
+                        </p>
+                    </div>
+                    <button onclick="openServiceModal(3)" class="text-secondary-fixed hover:text-white font-bold text-sm flex items-center gap-1 cursor-pointer transition-colors w-fit">
+                        عرض التفاصيل <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
                 </div>
-                <!-- Bento Card 5 -->
-                <div
-                    class="md:col-span-4 group bg-white/5 rounded-xl gold-border p-8 hover:bg-white/10 transition-all fade-up">
-                    <span class="material-symbols-outlined gold-text text-5xl mb-6">gavel</span>
-                    <h3 class="text-2xl font-bold mb-4">الطعون والتحكيم</h3>
-                    <p class="text-on-primary/60">متخصصون في النقض والإدارية العليا، بجانب التحكيم الدولي والمحلي لفض
-                        المنازعات.</p>
+                <!-- Card 5 -->
+                <div class="group bg-white/5 rounded-xl gold-border p-6 hover:bg-white/10 transition-all flex flex-col justify-between fade-up">
+                    <div>
+                        <span class="material-symbols-outlined gold-text text-4xl mb-4">badge</span>
+                        <h3 class="text-xl font-bold mb-2">قانون العمل</h3>
+                        <p class="text-on-primary/60 text-sm mb-6 leading-relaxed">
+                            حماية حقوق الموظفين، صياغة عقود العمل، تسوية المنازعات العمالية، وتمثيل الشركات في قضايا التوظيف.
+                        </p>
+                    </div>
+                    <button onclick="openServiceModal(4)" class="text-secondary-fixed hover:text-white font-bold text-sm flex items-center gap-1 cursor-pointer transition-colors w-fit">
+                        عرض التفاصيل <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                </div>
+                <!-- Card 6 -->
+                <div class="group bg-white/5 rounded-xl gold-border p-6 hover:bg-white/10 transition-all flex flex-col justify-between fade-up">
+                    <div>
+                        <span class="material-symbols-outlined gold-text text-4xl mb-4">public</span>
+                        <h3 class="text-xl font-bold mb-2">قانون الهجرة والجنسية</h3>
+                        <p class="text-on-primary/60 text-sm mb-6 leading-relaxed">
+                            تغطية خدمات الهجرة والجنسية، طلبات التأشيرات للموظفين والمستثمرين، والدفاع عن المهاجرين قانونياً.
+                        </p>
+                    </div>
+                    <button onclick="openServiceModal(5)" class="text-secondary-fixed hover:text-white font-bold text-sm flex items-center gap-1 cursor-pointer transition-colors w-fit">
+                        عرض التفاصيل <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                </div>
+                <!-- Card 7 -->
+                <div class="group bg-white/5 rounded-xl gold-border p-6 hover:bg-white/10 transition-all flex flex-col justify-between fade-up">
+                    <div>
+                        <span class="material-symbols-outlined gold-text text-4xl mb-4">security</span>
+                        <h3 class="text-xl font-bold mb-2">قانون التأمين وإعادة التأمين</h3>
+                        <p class="text-on-primary/60 text-sm mb-6 leading-relaxed">
+                            تقديم الاستشارات حول كل فئات التأمين، تأسيس شركات التأمين، وتمثيل العملاء في قضايا نزاعات التأمين.
+                        </p>
+                    </div>
+                    <button onclick="openServiceModal(6)" class="text-secondary-fixed hover:text-white font-bold text-sm flex items-center gap-1 cursor-pointer transition-colors w-fit">
+                        عرض التفاصيل <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                </div>
+                <!-- Card 8 -->
+                <div class="group bg-white/5 rounded-xl gold-border p-6 hover:bg-white/10 transition-all flex flex-col justify-between fade-up">
+                    <div>
+                        <span class="material-symbols-outlined gold-text text-4xl mb-4">trending_up</span>
+                        <h3 class="text-xl font-bold mb-2">ترخيص الاستثمار الأجنبي</h3>
+                        <p class="text-on-primary/60 text-sm mb-6 leading-relaxed">
+                            تقديم الدعم والتوجيه للمستثمرين وتأسيس الشركات الأجنبية وإصدار وتعديل تراخيص الاستثمار.
+                        </p>
+                    </div>
+                    <button onclick="openServiceModal(7)" class="text-secondary-fixed hover:text-white font-bold text-sm flex items-center gap-1 cursor-pointer transition-colors w-fit">
+                        عرض التفاصيل <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                </div>
+                <!-- Card 9 -->
+                <div class="group bg-white/5 rounded-xl gold-border p-6 hover:bg-white/10 transition-all flex flex-col justify-between fade-up">
+                    <div>
+                        <span class="material-symbols-outlined gold-text text-4xl mb-4">schema</span>
+                        <h3 class="text-xl font-bold mb-2">إعادة الهيكلة</h3>
+                        <p class="text-on-primary/60 text-sm mb-6 leading-relaxed">
+                            مساعدة الشركات للتغلب على الصعوبات الاقتصادية وحالات الإعسار الوشيك والتفاوض الفعال مع الدائنين.
+                        </p>
+                    </div>
+                    <button onclick="openServiceModal(8)" class="text-secondary-fixed hover:text-white font-bold text-sm flex items-center gap-1 cursor-pointer transition-colors w-fit">
+                        عرض التفاصيل <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                </div>
+                <!-- Card 10 -->
+                <div class="group bg-white/5 rounded-xl gold-border p-6 hover:bg-white/10 transition-all flex flex-col justify-between fade-up">
+                    <div>
+                        <span class="material-symbols-outlined gold-text text-4xl mb-4">scale</span>
+                        <h3 class="text-xl font-bold mb-2">التحكيم وفض المنازعات</h3>
+                        <p class="text-on-primary/60 text-sm mb-6 leading-relaxed">
+                            خدمات قانونية رائدة في مجالات التحكيم، قضايا التقاضي المدني والتجاري والعمالي، والتوفيق والوساطة.
+                        </p>
+                    </div>
+                    <button onclick="openServiceModal(9)" class="text-secondary-fixed hover:text-white font-bold text-sm flex items-center gap-1 cursor-pointer transition-colors w-fit">
+                        عرض التفاصيل <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                </div>
+                <!-- Card 11 -->
+                <div class="group bg-white/5 rounded-xl gold-border p-6 hover:bg-white/10 transition-all flex flex-col justify-between fade-up">
+                    <div>
+                        <span class="material-symbols-outlined gold-text text-4xl mb-4">payments</span>
+                        <h3 class="text-xl font-bold mb-2">الخدمات المصرفية والمالية</h3>
+                        <p class="text-on-primary/60 text-sm mb-6 leading-relaxed">
+                            إعادة هيكلة المتطلبات المباركية والديون، التمويل المنظم وتوفير الضمانات والائتمان العقاري.
+                        </p>
+                    </div>
+                    <button onclick="openServiceModal(10)" class="text-secondary-fixed hover:text-white font-bold text-sm flex items-center gap-1 cursor-pointer transition-colors w-fit">
+                        عرض التفاصيل <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                </div>
+                <!-- Card 12 -->
+                <div class="group bg-white/5 rounded-xl gold-border p-6 hover:bg-white/10 transition-all flex flex-col justify-between fade-up">
+                    <div>
+                        <span class="material-symbols-outlined gold-text text-4xl mb-4">account_balance</span>
+                        <h3 class="text-xl font-bold mb-2">التمويل الإسلامي</h3>
+                        <p class="text-on-primary/60 text-sm mb-6 leading-relaxed">
+                            صياغة وهيكلة صيغ التمويل الإسلامي، والترافع أمام لجان المنازعات المصرفية والتمويلية.
+                        </p>
+                    </div>
+                    <button onclick="openServiceModal(11)" class="text-secondary-fixed hover:text-white font-bold text-sm flex items-center gap-1 cursor-pointer transition-colors w-fit">
+                        عرض التفاصيل <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                </div>
+                <!-- Card 13 -->
+                <div class="group bg-white/5 rounded-xl gold-border p-6 hover:bg-white/10 transition-all flex flex-col justify-between fade-up">
+                    <div>
+                        <span class="material-symbols-outlined gold-text text-4xl mb-4">copyright</span>
+                        <h3 class="text-xl font-bold mb-2">الملكية الفكرية</h3>
+                        <p class="text-on-primary/60 text-sm mb-6 leading-relaxed">
+                            حماية العلامات التجارية، براءات الاختراع، حقوق التأليف والنشر، واتفاقيات الامتياز والتراخيص.
+                        </p>
+                    </div>
+                    <button onclick="openServiceModal(12)" class="text-secondary-fixed hover:text-white font-bold text-sm flex items-center gap-1 cursor-pointer transition-colors w-fit">
+                        عرض التفاصيل <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                </div>
+                <!-- Card 14 -->
+                <div class="group bg-white/5 rounded-xl gold-border p-6 hover:bg-white/10 transition-all flex flex-col justify-between fade-up">
+                    <div>
+                        <span class="material-symbols-outlined gold-text text-4xl mb-4">gavel</span>
+                        <h3 class="text-xl font-bold mb-2">الدعاوى العامة والمعقدة</h3>
+                        <p class="text-on-primary/60 text-sm mb-6 leading-relaxed">
+                            تمثيل المدعين والمدعى عليهم أمام جميع المحاكم في الدعاوى العامة والمعقدة والخصومات بالغة الصعوبة.
+                        </p>
+                    </div>
+                    <button onclick="openServiceModal(13)" class="text-secondary-fixed hover:text-white font-bold text-sm flex items-center gap-1 cursor-pointer transition-colors w-fit">
+                        عرض التفاصيل <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                </div>
+                <!-- Card 15 -->
+                <div class="group bg-white/5 rounded-xl gold-border p-6 hover:bg-white/10 transition-all flex flex-col justify-between fade-up">
+                    <div>
+                        <span class="material-symbols-outlined gold-text text-4xl mb-4">receipt_long</span>
+                        <h3 class="text-xl font-bold mb-2">قانون الضرائب</h3>
+                        <p class="text-on-primary/60 text-sm mb-6 leading-relaxed">
+                            تقديم استشارات ضريبية متكاملة محلياً ودولياً وحلول فعالة لتخطي أزمات الشركات والأفراد مع الضرائب.
+                        </p>
+                    </div>
+                    <button onclick="openServiceModal(14)" class="text-secondary-fixed hover:text-white font-bold text-sm flex items-center gap-1 cursor-pointer transition-colors w-fit">
+                        عرض التفاصيل <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -266,44 +478,35 @@
     <!-- Why Us & Stats -->
     <section class="py-24 bg-background overflow-hidden" id="why-us">
         <div class="max-w-container-max mx-auto px-margin-desktop">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-16">
                 <div class="fade-up">
-                    <h2 class="font-headline-lg text-headline-lg text-tertiary mb-8">لماذا يختار النخبة مكتب الأصيل؟
-                    </h2>
-                    <div class="space-y-6">
+                    <span class="gold-text font-bold tracking-widest uppercase mb-4 block">التميز والاحترافية</span>
+                    <h2 class="font-headline-lg text-headline-lg text-tertiary mb-6">لماذا تعد الأصيل للمحاماة اختيارك الأمثل؟</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-6">
+                        اكتسب مكتب الأصيل للمحاماة شهرة واسعة بفضل الله وبفضل جهود فريقنا المتفاني. لقد استطعنا تحقيق سجل حافل من الإنجازات في العديد من القضايا والنزاعات القانونية المعقدة، لنكون الشريك القانوني المثالي الذي يوفر لك أقصى درجات الحماية والسرعة.
+                    </p>
+                    <div class="space-y-4">
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center shrink-0">
-                                <span class="material-symbols-outlined text-black">check</span>
+                            <div class="w-10 h-10 rounded-full gold-bg flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-black text-lg">check</span>
                             </div>
                             <div>
-                                <h4 class="font-bold text-lg mb-1">فريق قانوني متكامل</h4>
-                                <p class="text-on-surface-variant">نخبة من المستشارين في مختلف التخصصات لضمان تغطية
-                                    شاملة لقضيتك.</p>
+                                <h4 class="font-bold text-lg mb-1">شريك قانوني مثالي</h4>
+                                <p class="text-on-surface-variant text-sm">نوفر أقصى درجات الحماية القانونية لجميع تعاملاتك التجارية والشخصية.</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center shrink-0">
-                                <span class="material-symbols-outlined text-black">check</span>
+                            <div class="w-10 h-10 rounded-full gold-bg flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-black text-lg">check</span>
                             </div>
                             <div>
-                                <h4 class="font-bold text-lg mb-1">متابعة دقيقة ولحظية</h4>
-                                <p class="text-on-surface-variant">نطلعك على كل تحديث في مسار قضيتك أولاً بأول من خلال
-                                    تقارير دورية.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center shrink-0">
-                                <span class="material-symbols-outlined text-black">check</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg mb-1">نسبة نجاح استثنائية</h4>
-                                <p class="text-on-surface-variant">سجل حافل بالانتصارات القانونية في أعقد القضايا أمام
-                                    مختلف المحاكم.</p>
+                                <h4 class="font-bold text-lg mb-1">دعم شامل ومتكامل</h4>
+                                <p class="text-on-surface-variant text-sm">نغطي كافة القطاعات والتخصصات القضائية والاستشارية بكفاءة متناهية.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-2 gap-6 fade-up delay-200">
+                <div class="col-span-full md:col-span-1 grid grid-cols-1 md:grid-cols-2 gap-6  fade-up delay-200">
                     <div
                         class="bg-tertiary p-10 rounded-2xl gold-border text-center transform hover:-translate-y-2 transition-all">
                         <div class="text-4xl font-bold gold-text mb-2 counter" data-target="1500">0</div>
@@ -323,6 +526,90 @@
                         class="bg-tertiary p-10 rounded-2xl gold-border text-center transform hover:-translate-y-2 transition-all">
                         <div class="text-4xl font-bold gold-text mb-2 counter" data-target="15">0</div>
                         <div class="text-white/70 text-sm">مستشار خبير</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Principles Grid -->
+            <div class="border-t border-outline-variant/30 pt-16">
+                <div class="text-center mb-12 fade-up">
+                    <h3 class="font-headline-lg text-headline-lg text-tertiary mb-4">مبادئنا وقيمنا الراسخة</h3>
+                    <p class="text-on-surface-variant max-w-2xl mx-auto text-sm">
+                        اللائحة الأساسية للقيم المهنية التي نسير عليها في جميع معاملاتنا القانونية لضمان نجاح وحماية شركائنا
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Principle 1 -->
+                    <div class="bg-white p-6 rounded-xl border border-outline-variant shadow-sm hover:border-secondary hover:shadow-md transition-all fade-up">
+                        <span class="material-symbols-outlined text-secondary text-3xl mb-4">history_edu</span>
+                        <h4 class="font-headline-md text-lg font-bold mb-2">صياغة محترفة للمعاملات</h4>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">
+                            تقديم أفضل صياغة محترفة لكل مستندات المعاملة والتفاوض خلال كل الصفقات والاتفاقيات بين الشركات، مما يضمن لك الحصول على صفقة رابحة.
+                        </p>
+                    </div>
+                    <!-- Principle 2 -->
+                    <div class="bg-white p-6 rounded-xl border border-outline-variant shadow-sm hover:border-secondary hover:shadow-md transition-all fade-up">
+                        <span class="material-symbols-outlined text-secondary text-3xl mb-4">published_with_changes</span>
+                        <h4 class="font-headline-md text-lg font-bold mb-2">استشارات إعادة الهيكلة</h4>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">
+                            تقديم أفضل الاستشارات القانونية في إعادة هيكلة الشركات وإجراءات رأس المال، والنزاعات القانونية والتمويلية المعقدة.
+                        </p>
+                    </div>
+                    <!-- Principle 3 -->
+                    <div class="bg-white p-6 rounded-xl border border-outline-variant shadow-sm hover:border-secondary hover:shadow-md transition-all fade-up">
+                        <span class="material-symbols-outlined text-secondary text-3xl mb-4">corporate_fare</span>
+                        <h4 class="font-headline-md text-lg font-bold mb-2">تأسيس وتمويل الشركات</h4>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">
+                            تقديم خدمات متكاملة واحترافية في تأسيس، تمويل، وهيكلة الشركات لتناسب جميع الأنشطة التجارية والاستثمارية.
+                        </p>
+                    </div>
+                    <!-- Principle 4 -->
+                    <div class="bg-white p-6 rounded-xl border border-outline-variant shadow-sm hover:border-secondary hover:shadow-md transition-all fade-up">
+                        <span class="material-symbols-outlined text-secondary text-3xl mb-4">border_color</span>
+                        <h4 class="font-headline-md text-lg font-bold mb-2">فريق كتابة الدعاوى المحترف</h4>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">
+                            نمتلك فريقاً من المحامين القادرين على صياغة وكتابة التقارير، الدعاوى القضائية، والشكاوى بكل أنواعها بدقة لغوية وقانونية متناهية.
+                        </p>
+                    </div>
+                    <!-- Principle 5 -->
+                    <div class="bg-white p-6 rounded-xl border border-outline-variant shadow-sm hover:border-secondary hover:shadow-md transition-all fade-up">
+                        <span class="material-symbols-outlined text-secondary text-3xl mb-4">manage_search</span>
+                        <h4 class="font-headline-md text-lg font-bold mb-2">متابعة التقاضي المستمرة</h4>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">
+                            متابعة مستمرة لكافة إجراءات التقاضي مع توفير ملخصات قانونية دورية ومرافعات قوية ومقنعة أمام مختلف درجات المحاكم.
+                        </p>
+                    </div>
+                    <!-- Principle 6 -->
+                    <div class="bg-white p-6 rounded-xl border border-outline-variant shadow-sm hover:border-secondary hover:shadow-md transition-all fade-up">
+                        <span class="material-symbols-outlined text-secondary text-3xl mb-4">school</span>
+                        <h4 class="font-headline-md text-lg font-bold mb-2">التطوير المستمر للخبرات</h4>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">
+                            العمل الدؤوب لتطوير خبراتنا العلمية والعملية في القانون ومواكبة القوانين الجديدة لتقديم خدمات متميزة ذات جودة استشارية فائقة.
+                        </p>
+                    </div>
+                    <!-- Principle 7 -->
+                    <div class="bg-white p-6 rounded-xl border border-outline-variant shadow-sm hover:border-secondary hover:shadow-md transition-all fade-up">
+                        <span class="material-symbols-outlined text-secondary text-3xl mb-4">admin_panel_settings</span>
+                        <h4 class="font-headline-md text-lg font-bold mb-2">الخصوصية وسرية البيانات</h4>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">
+                            نضع خصوصية عملائنا وسرية بياناتهم وملفاتهم في مقام الأولوية القصوى، مع اتخاذ تدابير أمنية صارمة وموثوقة.
+                        </p>
+                    </div>
+                    <!-- Principle 8 -->
+                    <div class="bg-white p-6 rounded-xl border border-outline-variant shadow-sm hover:border-secondary hover:shadow-md transition-all fade-up">
+                        <span class="material-symbols-outlined text-secondary text-3xl mb-4">bolt</span>
+                        <h4 class="font-headline-md text-lg font-bold mb-2">الأساليب الحديثة والسرعة</h4>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">
+                            استخدام الأساليب الإدارية والتكنولوجية الحديثة التي توفر المرونة والسرعة والدقة المتناهية في إنجاز كافة المهام.
+                        </p>
+                    </div>
+                    <!-- Principle 9 -->
+                    <div class="bg-white p-6 rounded-xl border border-outline-variant shadow-sm hover:border-secondary hover:shadow-md transition-all fade-up">
+                        <span class="material-symbols-outlined text-secondary text-3xl mb-4">gavel</span>
+                        <h4 class="font-headline-md text-lg font-bold mb-2">التمثيل أمام الجهات الرسمية</h4>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">
+                            تمثيل العملاء بقوة أمام جميع الجهات الحكومية، القضائية، والإدارية المختلفة، والترافع بالنيابة عنهم بما يحفظ مصالحهم.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -531,11 +818,41 @@
         </svg>
     </a>
 
+    <!-- Services Modal -->
+    <div id="service-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
+        <!-- Backdrop -->
+        <div id="modal-backdrop" class="absolute inset-0 bg-black/80 backdrop-blur-sm cursor-pointer"></div>
+        <!-- Modal Content Box -->
+        <div class="relative bg-tertiary text-white w-full max-w-3xl mx-4 rounded-2xl gold-border shadow-2xl overflow-hidden z-10 transform scale-95 transition-transform duration-300 flex flex-col max-h-[85vh]">
+            <!-- Header -->
+            <div class="flex items-center justify-between p-6 border-b border-white/10 shrink-0">
+                <div class="flex items-center gap-3">
+                    <span id="modal-icon" class="material-symbols-outlined gold-text text-3xl">balance</span>
+                    <h3 id="modal-title" class="text-2xl font-bold gold-text">عنوان الخدمة</h3>
+                </div>
+                <button id="modal-close" class="w-10 h-10 rounded-full border border-white/15 hover:border-white/40 flex items-center justify-center cursor-pointer transition-all hover:bg-white/5" aria-label="إغلاق">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <!-- Body -->
+            <div id="modal-body" class="p-8 overflow-y-auto font-body-lg text-body-md leading-relaxed space-y-6 text-right" dir="rtl">
+                <!-- Content injected dynamically -->
+            </div>
+            <!-- Footer -->
+            <div class="p-6 border-t border-white/10 flex justify-end shrink-0 bg-black/20">
+                <button id="modal-action-btn" class="gold-bg text-black px-6 py-2.5 rounded-full font-bold hover:brightness-110 active:scale-95 transition-all cursor-pointer">
+                    احجز استشارة لهذه الخدمة
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- up button -->
     <button
         class="up-btn fixed bottom-24 right-8 w-12 h-12 bg-secondary-fixed hover:cursor-pointer text-white rounded-full flex items-center justify-center shadow-2xl z-50 hover:scale-110 transition-transform">
         <span class="material-symbols-outlined arrow-upward text-black">arrow_upward</span>
     </button>
+
     <script src="script.js"></script>
 </body>
 
